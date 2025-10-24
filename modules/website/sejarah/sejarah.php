@@ -1,0 +1,34 @@
+<?php defined('FMIPA_APP') or exit('Forbidden...!'); ?>
+
+<!-- Start #main -->
+<main class="main">
+    <?php pageTitle('Sejarah FMIPA Unimed', 'Sejarah FMIPA'); ?>
+    <!-- Leadership Section -->
+    <section id="leadership" class="leadership section">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row mb-5">
+                <div class="col-lg-12" data-aos="fade-right" data-aos-delay="200">
+                    <h3 class="section-subtitle">Sejarah</h3>
+                    <h2 class="section-heading">Sejarah FMIPA Unimed</h2>
+                    <p class="section-description">Sejarah Terbentuknya Fakultas Matematika dan IPA (FMIPA) Universitas Negeri Medan (Unimed) telah melalui proses yang panjang. Perkembangannya hingga capaian saat ini tidak lepas dari proses perkembangan FKIP USU hingga menjadi Universitas Negeri Medan seperti saat ini. Pada awalnya di tahun 1962, FKIP USU menunjukkan perkembangan yang pesat, jurusan yang dikelola bertambah, dan jumlah mahasiswa semakin bertambah banyak. Pada masa itu juga pemerintah telah memikirkan untuk membentuk suatu kelembagaan IKIP seperti yang ada di Bandung dan Malang, dengan maksud untuk menghapuskan PTPG. Kondisi ini mengharapkan FKIP USU lebih berkembang dan dapat menjadi IKIP. Pada saat itu FKIP USU belum memenuhi syarat untuk menjadi suatu Institusi Keguruan dan Ilmu Pendidikan yang berdiri sendiri, maka FKIP USU kemudian dijadikan cabang dari IKIP Jakarta. Dengan demikian pada tanggal 23 Juni 1963 terbentuklah IKIP Jakarta cabang Medan. Sebagai Dekan Koordinator diangkat G. Sianipar, SH, M.Sc, dibantu oleh dewan Presidium yang anggotanya terdiri atas G. Sianipar, S.H., M.Sc., Apul Panggabean, M.A, dan D.Q. Nasution.</p>
+                    <p class="section-description">Seiring dengan perubahan FKIP USU menjadi IKIP Jakarta Cabang Medan, maka terjadi pula re-organisasi pada Fakultas ini. Jurusan-jurusan dikelompokkan sesuai dengan bidang ilmu dan mematangkannya untuk menjadi Institut Keguruan Ilmu Pendidikan (IKIP) yang berdiri sendiri. Salah satu cabang FKIP yaitu Ilmu Eksakta yang terdiri atas : Ilmu Pasti, Ilmu Kimia, Ilmu Hayat, dan Ilmu Alam.</p>
+                    <p class="section-description">Di masa kepemimpinan Prof. Djanius Djamin. S.H., M.S.. IKIP Medan dikonversi menjadi Universitas Negeri Medan (Unimed) sesuai dengan Surat keputusan Presiden Republik Indonesia Nomor 124 Tahun 1999. Selanjutnva sesuai dengan Surat Keputusan Presiden Nomor 35/M/Tahun 2003, kepemimpinan Rektor Unimed masih dipercayakan kepada Prof. Djanius Djamin. S.H., M.S. dibantu oleh Drs. Hasudungan Sinaga, M.S. sebagai Pembantu Rektor I. Drs. Syawal Gultom, M.Pd. sebagai Pembantu Rektor II. Dr. Albinus Silalahi. M.Si, sebagai Pembantu Rektor III dan Dra. Setianna Simorangkir, M.A. Sebagai Pembantu Rektor IV. Pada periode ini terjadi penambahan Pembantu Rektor, yakni Pembantu Rektor V bidang perencanaan dan pengembangan, yang dipercayakan kepada Drs. Alimuddin Lubis.</p>
+                    <p class="section-description">Perubahan kelembagaan menjadi Universitas Negeri Medan yang peresmiannya dilaksanakan pada bulan Pebruari 2000 dengan SK. Presiden No. 124 Tahun 1999, tanggal 7 Oktober 1999 menyebabkan terjadinya perubahan fungsi lembaga dan yang sebelumnya hanya mengelola program studi kependidikan yaitu Sarjana Pendidikan (S.Pd), setelah menjadi universitas juga menamatkan program studi non kependidikan yaitu Sarjana Sains (S.Si), Sarjana Matematika (S.Mat), Sarjana Komputer (S.Kom). Ini dimaksudkan sebagai upaya peningkatan mutu penyelenggaraan Lembaga Pendidikan Tenaga Kependidikan (LPTK) dan untuk meningkatkan mutu lulusan yang dipandang relevan untuk menjawab kebutuhan pembangunan di berbagai bidang.</p>
+                    <p class="section-description">Sejak tahun 2008 FMIPA Unimed adalah pelopor fakultas di Unimed yang telah menyelenggarakan kelas bertaraf internasional untuk semua program studi kependidikan, yaitu Pendidikan Matematika Bilingual, Pendidikan Fisika Bilingual, Pendidikan Kimia Bilingual, Pendidikan Biologi Bilingual, dan pada tahun 2018 dibuka untuk Pendidikan IPA Bilingual. Kelas bertaraf internasional ini dalam perkuliahannya menggunakan dua bahasa (Inggris – Indonesia). Tujuan dibukanya program bilingual ini adalah untuk meningkatkan daya saing lulusan (khususnya calon guru) pada tingkat internasional. Sejak tahun 2014, FMIPA juga telah menyelenggarakan seminar internasional bertajuk sains dan pendidikan sains setiap tahun yang melibatkan pembicara utama (keynote speakers) bereputasi dari berbagai institusi ternama, di dalam maupun di luar negeri. Semua program tersebut telah meningkatkan keunggulan dan tingkat rekoginisi FMIPA Unimed, baik pada tingkat nasional maupun internasional.</p>
+                    <p class="section-description">Program Studi Pendidikan IPA (PIPA) dibuka sejak tanggal 13 Juni 2017 sesuai Kemenristekdikti Nomor 357/KPT/I/2017 tentang izin pembukaan program studi Pendidikan Ilmu Pengetahuan Alam program sarjana. Lahirnya program studi ini dipandang perlu mengingat Kurikulum KTSP dan Kurikulum 2013 yang mengharuskan IPA Terpadu di SMP/MTs diajarkan secara menyeluruh dan saling terkait satu sama lain, namun di lapangan diajarkan terpisah-pisah karena guru-guru IPA terpadu masih banyak yang tidak memenuhi kualifikasi S1 Pendidikan IPA sehingga telah terjadi ketidak-sesuaian kualifikasi pendidikan guru IPA.</p>
+                    <p class="section-description">Saat ini FMIPA Unimed menangani 4 (empat) jurusan yaitu : Jurusan Matematika, Jurusan Fisika, Jurusan Kimia, Jurusan Biologi. Dari ke-empat jurusan tersebut, memiliki masing-masing beberapa program studi yang terdiri dari Program Studi Pendidikan Matematika, Program Studi Matematika, Program Studi Ilmu Komputer, Program Studi Pendidikan Fisika, Program Studi Fisika, Program Studi Pendidikan Kimia, Program Studi Kimia, Program Studi Pendidikan Biologi, Program Studi Biologi, Program Studi Pendidikan IPA. Program Bilingual yang terdiri dari Pendidikan Matematika Bilingual, Pendidikan Fisika Bilingual, Pendidikan Kimia Bilingual, Pendidikan Biologi Bilingual, Pendidikan IPA Bilingual.</p>
+
+                </div>
+                <!-- <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="about-image">
+                        <img src="assets/img/education/teacher-1.webp" alt="Our Leadership Team" class="img-fluid rounded">
+                    </div>
+                </div> -->
+            </div>
+
+        </div>
+
+    </section><!-- /Leadership Section -->
+</main>
