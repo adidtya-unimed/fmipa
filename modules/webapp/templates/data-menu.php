@@ -10,10 +10,16 @@ $menus = [
         // ]],
         // ["nama" => "Dokumen Akreditasi", "icon" => "bi bi-file-earmark-diff", "href" => getRoute('/main') . "?p=tampil-data-akreditasi", "aktif" => null, "sub" => null],
         // ["nama" => "Dokumen IKU", "icon" => "bi bi-file-earmark-easel", "href" => getRoute('/main') . "?p=tampil-data-iku", "aktif" => null, "sub" => null],
-        ["nama" => "Event", "icon" => "bi bi-archive", "href" => getRoute('/main') . "?p=tampil-event", "aktif" => null, "sub" => null],
-        ["nama" => "Fungsionaris", "icon" => "bi bi-file-earmark-diff", "href" => getRoute('/main') . "?p=tampil-fungsionaris", "aktif" => null, "sub" => null],
-        ["nama" => "Dosen", "icon" => "bi bi-file-person", "href" => getRoute('/main') . "?p=tampil-dosen", "aktif" => null, "sub" => null],
-        ["nama" => "Prodi", "icon" => "bi bi-file-earmark-easel", "href" => getRoute('/main') . "?p=tampil-prodi", "aktif" => null, "sub" => null],
+        ["nama" => "Profil", "icon" => "bi bi-person-circle", "href" => "#", "aktif" => null, "sub" => [
+            ["nama" => "Event", "href" => getRoute('main') . "?p=tampil-event"],
+            ["nama" => "Fungsionaris", "href" => getRoute('main') . "?p=tampil-fungsionaris"],
+            ["nama" => "Dosen", "href" => getRoute('main') . "?p=tampil-dosen"],
+            ["nama" => "Tendik", "href" => getRoute('main') . "?p=tampil-tendik"],
+        ]],
+        ["nama" => "Akademik", "icon" => "bi bi-journal-bookmark", "href" => "#", "aktif" => null, "sub" => [
+            ["nama" => "Program Studi", "href" => getRoute('main') . "?p=tampil-prodi"],
+        ]],
+        // ["nama" => "Event", "icon" => "bi bi-archive", "href" => getRoute('/main') . "?p=tampil-event", "aktif" => null, "sub" => null],
         ["nama" => "Master", "icon" => "bi bi-database", "href" => "#", "aktif" => null, "sub" => [
             ["nama" => "Data User", "href" => getRoute('main') . "?p=tampil-user"],
             ["nama" => "Data Role", "href" => getRoute('main') . "?p=tampil-role"],

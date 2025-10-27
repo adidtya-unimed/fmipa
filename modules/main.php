@@ -39,6 +39,15 @@ if (isset($_GET['p'])) {
         case 'edit-dosen':
             include "webapp/dosen/edit.php";
             break;
+        case 'tampil-tendik':
+            include "webapp/tendik/view.php";
+            break;
+        case 'tambah-tendik':
+            include "webapp/tendik/tambah.php";
+            break;
+        case 'edit-tendik':
+            include "webapp/tendik/edit.php";
+            break;
         case 'tampil-prodi':
             include "webapp/prodi/view.php";
             break;
