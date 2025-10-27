@@ -127,7 +127,7 @@ $res2 = mysqli_query($conn, $query2);
                             <select class="form-select select2-example" name="pendidikan">
                                 <option selected disabled>Pilih Pendidikan</option>
                                 <option value="S2" <?= $row['pendidikan'] == 'S2' ? 'selected' : '' ?>>S2</option>
-                                <option value="S3" <?= $row['pendidikan'] == 'S2' ? 'selected' : '' ?>>S3</option>
+                                <option value="S3" <?= $row['pendidikan'] == 'S3' ? 'selected' : '' ?>>S3</option>
                             </select>
                         </div>
                     </div>
@@ -136,8 +136,8 @@ $res2 = mysqli_query($conn, $query2);
                         <div class="col-sm-10">
                             <select class="form-select select2-example" name="fungsional">
                                 <option selected disabled>Pilih Jabatan Fungsional</option>
-                                <option value="Profesor/Guru Besar" <?= $row['fungsional'] == 'Profesor/Guru Besar' ? 'selected' : '' ?>>Profesor/Guru Besar</option>
-                                <option value="Lektor Kepala" <?= $row['fungsional'] == 'Lektor Kepala' ? 'selected' : '' ?>>Kepala</option>
+                                <option value="Profesor/Guru Besar" <?= $row['fungsional'] == 'Profesor/ Guru Besar' ? 'selected' : '' ?>>Profesor/Guru Besar</option>
+                                <option value="Lektor Kepala" <?= $row['fungsional'] == 'Lektor Kepala' ? 'selected' : '' ?>>Lektor Kepala</option>
                                 <option value="Lektor" <?= $row['fungsional'] == 'Lektor' ? 'selected' : '' ?>>Lektor</option>
                                 <option value="Asisten Ahli" <?= $row['fungsional'] == 'Asisten Ahli' ? 'selected' : '' ?>>Asisten Ahli</option>
                                 <option value="Belum Ada Jabatan" <?= $row['fungsional'] == 'Belum Ada Jabatan' ? 'selected' : '' ?>>Belum Ada Jabatan</option>
