@@ -1,86 +1,27 @@
 <?php
 defined('FMIPA_APP') or exit('Forbidden...!');
 
-if (!ifPOST(['id', 'nama', 'jabatan', 'penempatan', 'bidang', 'email', 'kontak', 'level', 'foto_lama'])) {
+if (!ifPOST(['id', 'nidn', 'nip', 'nama', 'keahlian', 'prodi', 'jurusan', 'status', 'golongan', 'masa_kerja', 'pendidikan', 'fungsional'])) {
     die('Request Rejected...!');
 }
 
 $conn = db_mysqli();
 
-$input1 = real_escape($_POST['nama'], $conn);
-$input2 = real_escape($_POST['jabatan'], $conn);
-$input3 = real_escape($_POST['penempatan'], $conn);
-$input4 = real_escape($_POST['bidang'], $conn);
-$input5 = real_escape($_POST['email'], $conn);
-$input6 = real_escape($_POST['kontak'], $conn);
-$input7 = real_escape($_POST['level'], $conn);
-$input8 = real_escape($_POST['foto_lama'], $conn);
-$input10 = real_escape($_POST['id'], $conn);
-
-if ($_FILES['foto']['error'] === 4) {
-    $input9 = $input8;
-} else {
-    $q = sprintf("SELECT `foto` FROM fungsionaris WHERE `id`='%s'", $input10);
-    $rs = mysqli_query($conn, $q);
-
-    if ($rs && mysqli_num_rows($rs) > 0) {
-        $r = mysqli_fetch_assoc($rs);
-        $fotoPath = 'storage/fungsionaris/' . $r['foto'];
-        if (file_exists($fotoPath)) {
-            unlink($fotoPath);
-        }
-    }
-
-    $input9 = upload($input1);
-    if ($input9 === false) {
-        return false;
-    }
-}
-
-function upload($nama)
-{
-    $namaFile = $_FILES['foto']['name'];
-    $ukuranFile = $_FILES['foto']['size'];
-    $error = $_FILES['foto']['error'];
-    $tmpName = $_FILES['foto']['tmp_name'];
-
-    if ($error === 4) {
-        session_start();
-        $_SESSION['gagal'] = "Gagal Deteksi File, Silahkan Upload lagi";
-        redirect('/main?p=tambah-document');
-        return false;
-    }
-
-    // $ekstensiFileValid = ['pdf'];
-    $ekstensiFile = explode('.', $namaFile);
-    $ekstensiFile = strtolower(end($ekstensiFile));
-    // if (!in_array($ekstensiFile, $ekstensiFileValid)) {
-    //     session_start();
-    //     $_SESSION['gagal'] = "Ekstensi File Salah";
-    //     redirect('/main?p=tambah-document');
-    //     return false;
-    // }
-
-    if ($ukuranFile > 50000000) {
-        session_start();
-        $_SESSION['gagal'] = "Ukuran File Terlalu Besar";
-        redirect('/main?p=tambah-fungsionaris');
-        return false;
-    }
-
-    $namaFileBaru = preg_replace('/\s+/', '_', $nama);
-    $namaFileBaru .= '.';
-    $namaFileBaru .= $ekstensiFile;
-
-    $destination = 'storage/fungsionaris/' . $namaFileBaru;
-
-    move_uploaded_file($tmpName, $destination);
-
-    return $namaFileBaru;
-}
+$input1 = real_escape($_POST['nidn'], $conn);
+$input2 = real_escape($_POST['nip'], $conn);
+$input3 = real_escape($_POST['nama'], $conn);
+$input4 = real_escape($_POST['keahlian'], $conn);
+$input5 = real_escape($_POST['prodi'], $conn);
+$input6 = real_escape($_POST['jurusan'], $conn);
+$input7 = real_escape($_POST['status'], $conn);
+$input8 = real_escape($_POST['golongan'], $conn);
+$input9 = real_escape($_POST['masa_kerja'], $conn);
+$input10 = real_escape($_POST['pendidikan'], $conn);
+$input11 = real_escape($_POST['fungsional'], $conn);
+$input12 = real_escape($_POST['id'], $conn);
 
 $query = sprintf(
-    "UPDATE fungsionaris SET `nama`='%s', `jabatan`='%s', `penempatan`='%s', `bidang`='%s', `email`='%s', `kontak`='%s', `level`='%s', `foto`='%s' WHERE `id`='%s'",
+    "UPDATE dosen SET `nidn`='%s', `nip`='%s', `nama`='%s', `keahlian`='%s', `prodi`='%s', `jurusan`='%s', `status`='%s', `golongan`='%s', `masa_kerja`='%s', `pendidikan`='%s', `fungsional`='%s' WHERE `id`='%s'",
     $input1,
     $input2,
     $input3,
@@ -88,8 +29,11 @@ $query = sprintf(
     $input5,
     $input6,
     $input7,
+    $input8,
     $input9,
-    $input10
+    $input10,
+    $input11,
+    $input12
 );
 
 
@@ -99,10 +43,10 @@ if (!$result) {
     mysqli_close($conn);
     session_start();
     $_SESSION['gagal'] = "Proses gagal, mohon periksa kembali";
-    redirect('/main?p=tampil-fungsionaris');
+    redirect('/main?p=tampil-dosen');
 } else {
     mysqli_close($conn);
     session_start();
     $_SESSION['sukses'] = "Data Berhasil di Tambahkan";
-    redirect('/main?p=tampil-fungsionaris');
+    redirect('/main?p=tampil-dosen');
 }

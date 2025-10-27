@@ -27,7 +27,6 @@ $res = mysqli_query($conn, $query);
                             <th>Nama</th>
                             <th>NIDN</th>
                             <th>NIP</th>
-                            <th>Nama</th>
                             <th>Prodi</th>
                             <th>Jurusan</th>
                             <th>Status</th>
@@ -43,13 +42,14 @@ $res = mysqli_query($conn, $query);
                                 <tr>
                                     <td><?= $no; ?></td>
                                     <td><?= $row['nama'] ?></td>
-                                    <td><?= $row['jabatan'] ?></td>
-                                    <td><?= $row['penempatan'] ?></td>
-                                    <td><?= $row['bidang'] ?></td>
-                                    <td><img src="storage/fungsionaris/<?= $row['foto'] ?>" alt="Foto Fungsionaris" width="50"></td>
+                                    <td><?= $row['nidn'] ?></td>
+                                    <td><?= $row['nip'] ?></td>
+                                    <td><?= $row['prodi'] ?></td>
+                                    <td><?= $row['jurusan'] ?></td>
+                                    <td><?= $row['status'] ?></td>
                                     <td>
-                                        <a href="<?= getRoute('/main?p=edit-fungsionaris&id=' . $row['id']); ?>" class="badge bg-success"><i class="bi bi-pencil-square"></i></a>
-                                        <a id="link-hapus" href="<?= getRoute('/fungsionaris/delete?id=' . $row['id']); ?>" class="badge bg-danger" onclick="confirmDelete(event, this);"><i class="bi bi-file-earmark-x"></i></a>
+                                        <a href="<?= getRoute('/main?p=edit-dosen&id=' . $row['id']); ?>" class="badge bg-success"><i class="bi bi-pencil-square"></i></a>
+                                        <a id="link-hapus" href="<?= getRoute('/dosen/delete?id=' . $row['id']); ?>" class="badge bg-danger" onclick="confirmDelete(event, this);"><i class="bi bi-file-earmark-x"></i></a>
 
                                     </td>
                                 </tr>
