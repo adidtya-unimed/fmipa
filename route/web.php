@@ -6,6 +6,7 @@ addRoute('/index', 'index.php');
 
 addRoute('/admin', 'login.php');
 addRoute('/level', 'level.php');
+addRoute('/level2', 'level2.php');
 addRoute('/login/confirm', 'login_confirm.php');
 addRoute('/logout', 'logout.php');
 

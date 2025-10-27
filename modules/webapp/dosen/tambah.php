@@ -56,7 +56,7 @@ $res2 = mysqli_query($conn, $query2);
                                 <option selected disabled>Pilih prodi</option>
                                 <?php if (mysqli_num_rows($res1) > 0) : ?>
                                     <?php while ($row1 = mysqli_fetch_assoc($res1)) : ?>
-                                        <option value="<?= $row1['nama'] ?>"><?= $row1['nama'] ?></option>
+                                        <option value="<?= $row1['jenjang'] . ' ' . $row1['nama'] ?>"><?= $row1['jenjang'] . ' ' . $row1['nama'] ?></option>
                                     <?php endwhile; ?>
                                 <?php endif; ?>
                             </select>
