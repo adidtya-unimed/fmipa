@@ -18,8 +18,8 @@
                         <li><a href="<?= getRoute('/') ?>?p=struktur-organisasi">Struktur Organisasi</a></li>
                         <li><a href="<?= getRoute('/') ?>?p=fungsionaris">Fungsionaris</a></li>
                         <li><a href="<?= getRoute('/') ?>?p=sejarah">Sejarah FMIPA Unimed</a></li>
-                        <li><a href="#">Dosen</a></li>
-                        <li><a href="#">Tenaga Kependidikan</a></li>
+                        <li><a href="<?= getRoute('/') ?>?p=dosen">Dosen</a></li>
+                        <li><a href="<?= getRoute('/') ?>?p=tendik">Tenaga Kependidikan</a></li>
                     </ul>
                 </li>
 

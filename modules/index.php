@@ -30,6 +30,12 @@ if (isset($_GET['p'])) {
         case 'prodi':
             include "website/prodi/prodi.php";
             break;
+        case 'dosen':
+            include "website/dosen/dosen.php";
+            break;
+        case 'tendik':
+            include "website/tendik/tendik.php";
+            break;
         default:
             include "home/home.php";
             break;

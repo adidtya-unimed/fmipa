@@ -16,14 +16,14 @@ $result = mysqli_query($conn, $query);
 
 if (mysqli_num_rows($result) > 1 && mysqli_num_rows($result) == 0) {
     setcookie('pesan', 'Username salah!');
-    redirect('/login');
+    redirect('/admin');
 }
 
 $row = mysqli_fetch_assoc($result);
 
 if (!password_verify($password, $row['password'])) {
     setcookie('pesan', 'Kombinasi password dan username salah!', time() + 2);
-    redirect('/login');
+    redirect('/admin');
 }
 
 session_start();
