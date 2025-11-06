@@ -55,7 +55,7 @@
 
                 <li class="dropdown"><a href="#"><span>Kemahasiswaan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
-                        <li><a href="#">Tingkat Fakultas</a></li>
+                        <li><a href="<?= getRoute('/') ?>?p=kemahasiswaan-fakultas">Tingkat Fakultas</a></li>
                         <li><a href="#">Tingkat Jurusan</a></li>
                     </ul>
                 </li>

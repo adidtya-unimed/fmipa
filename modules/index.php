@@ -45,6 +45,9 @@ if (isset($_GET['p'])) {
         case 'manual-mutu':
             include "website/manual-mutu/manual-mutu.php";
             break;
+        case 'kemahasiswaan-fakultas':
+            include "website/kemahasiswaan-fakultas/kemahasiswaan-fakultas.php";
+            break;
         default:
             include "home/home.php";
             break;
