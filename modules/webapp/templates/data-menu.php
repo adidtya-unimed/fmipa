@@ -19,14 +19,9 @@ $menus = [
         ["nama" => "Akademik", "icon" => "bi bi-journal-bookmark", "href" => "#", "aktif" => null, "sub" => [
             ["nama" => "Program Studi", "href" => getRoute('main') . "?p=tampil-prodi"],
         ]],
-        // ["nama" => "Event", "icon" => "bi bi-archive", "href" => getRoute('/main') . "?p=tampil-event", "aktif" => null, "sub" => null],
+        ["nama" => "Mutu Internal", "icon" => "bi bi-clipboard-check", "href" => getRoute('/main') . "?p=tampil-mutu-internal", "aktif" => null, "sub" => null],
         ["nama" => "Master", "icon" => "bi bi-database", "href" => "#", "aktif" => null, "sub" => [
             ["nama" => "Data User", "href" => getRoute('main') . "?p=tampil-user"],
-            ["nama" => "Data Role", "href" => getRoute('main') . "?p=tampil-role"],
-            ["nama" => "Data Tag", "href" => getRoute('main') . "?p=tampil-tag"],
-            ["nama" => "Data Type", "href" => getRoute('main') . "?p=tampil-type"],
-            ["nama" => "Data Monev", "href" => getRoute('main') . "?p=tampil-monev"],
-            ["nama" => "Data Akreditasi", "href" => getRoute('main') . "?p=tampil-akreditasi"],
         ]],
     ],
 ];

@@ -6,7 +6,7 @@
             <!-- <img src="assets/img/logo.webp" alt=""> -->
             <!-- <i class="bi bi-buildings"></i> -->
             <!-- <h1 class="sitename">Halo</h1> -->
-            <img src="assets/img/logo-fmipa.png" alt="" height="100">
+            <img src="assets/website/img/logo-fmipa.png" alt="" height="100">
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -62,8 +62,9 @@
 
                 <li class="dropdown"><a href="#"><span>Mutu Internal</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
-                        <li><a href="#">Kebijakan Mutu</a></li>
-                        <li><a href="#">Standard Mutu</a></li>
+                        <li><a href="<?= getRoute('/') ?>?p=kebijakan-mutu">Kebijakan Mutu</a></li>
+                        <li><a href="<?= getRoute('/') ?>?p=standar-mutu">Standard Mutu</a></li>
+                        <li><a href="<?= getRoute('/') ?>?p=manual-mutu">Manual Mutu</a></li>
                     </ul>
                 </li>
                 <li class="dropdown"><a href="#"><span>Zona Integritas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -79,14 +80,14 @@
                 <li class="dropdown"><a href="#"><span>PPID</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
                         <li><a href="#">Pengaduan Online</a></li>
-                        <li><a href="#">LAPOR</a></li>
+                        <li><a href="https://lapor.go.id/" target="_blank">LAPOR</a></li>
                     </ul>
                 </li>
                 <li class="dropdown"><a href="#"><span>Lain-lain</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
                         <li class="dropdown"><a href="#"><span>Kegiatan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                             <ul>
-                                <li><a href="#">AISTSSE</a></li>
+                                <li><a href="https://sitsefmipa.unimed.ac.id/" target="_blank">AISTSSE</a></li>
                                 <li><a href="#">PKKMB</a></li>
                                 <li><a href="#">Mathematics Fair</a></li>
                                 <li><a href="#">Physics Festival</a></li>
@@ -108,7 +109,7 @@
                                 <li class="dropdown"><a href="#"><span>Survei</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                                     <ul>
                                         <li><a href="#">Kepuasan Mitra Kerjasama</a></li>
-                                        <li><a href="#">Tracer Study</a></li>
+                                        <li><a href="https://tracer.unimed.ac.id/alumni/login.php" target="_blank">Tracer Study</a></li>
                                     </ul>
                                 </li>
                             </ul>

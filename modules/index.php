@@ -36,6 +36,15 @@ if (isset($_GET['p'])) {
         case 'tendik':
             include "website/tendik/tendik.php";
             break;
+        case 'kebijakan-mutu':
+            include "website/kebijakan-mutu/kebijakan.php";
+            break;
+        case 'standar-mutu':
+            include "website/standar-mutu/standar-mutu.php";
+            break;
+        case 'manual-mutu':
+            include "website/manual-mutu/manual-mutu.php";
+            break;
         default:
             include "home/home.php";
             break;

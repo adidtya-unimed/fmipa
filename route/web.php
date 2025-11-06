@@ -37,3 +37,7 @@ addRoute('/prodi/delete', '/webapp/prodi/delete.php', true);
 addRoute('/tendik/create', '/webapp/tendik/add.php', true);
 addRoute('/tendik/update', '/webapp/tendik/update.php', true);
 addRoute('/tendik/delete', '/webapp/tendik/delete.php', true);
+
+addRoute('/mutu-internal/create', '/webapp/mutu-internal/add.php', true);
+addRoute('/mutu-internal/update', '/webapp/mutu-internal/update.php', true);
+addRoute('/mutu-internal/delete', '/webapp/mutu-internal/delete.php', true);

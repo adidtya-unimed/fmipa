@@ -57,6 +57,15 @@ if (isset($_GET['p'])) {
         case 'edit-prodi':
             include "webapp/prodi/edit.php";
             break;
+        case 'tampil-mutu-internal':
+            include "webapp/mutu-internal/view.php";
+            break;
+        case 'tambah-mutu-internal':
+            include "webapp/mutu-internal/tambah.php";
+            break;
+        case 'edit-mutu-internal':
+            include "webapp/mutu-internal/edit.php";
+            break;
         default:
             include "webapp/dashboard/dashboard.php";
             break;
