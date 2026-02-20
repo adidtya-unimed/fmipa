@@ -41,3 +41,11 @@ addRoute('/tendik/delete', '/webapp/tendik/delete.php', true);
 addRoute('/mutu-internal/create', '/webapp/mutu-internal/add.php', true);
 addRoute('/mutu-internal/update', '/webapp/mutu-internal/update.php', true);
 addRoute('/mutu-internal/delete', '/webapp/mutu-internal/delete.php', true);
+
+addRoute('/master/user/create', '/webapp/master/data-user/add.php', true);
+addRoute('/master/user/update', '/webapp/master/data-user/update.php', true);
+addRoute('/master/user/delete', '/webapp/master/data-user/delete.php', true);
+
+addRoute('/master/role/create', '/webapp/master/data-role/add.php', true);
+addRoute('/master/role/update', '/webapp/master/data-role/update.php', true);
+addRoute('/master/role/delete', '/webapp/master/data-role/delete.php', true);

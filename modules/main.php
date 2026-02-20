@@ -66,6 +66,24 @@ if (isset($_GET['p'])) {
         case 'edit-mutu-internal':
             include "webapp/mutu-internal/edit.php";
             break;
+        case 'tampil-user':
+            include "webapp/master/data-user/view.php";
+            break;
+        case 'tambah-user':
+            include "webapp/master/data-user/tambah.php";
+            break;
+        case 'edit-user':
+            include "webapp/master/data-user/edit.php";
+            break;
+        case 'tampil-role':
+            include "webapp/master/data-role/view.php";
+            break;
+        case 'tambah-role':
+            include "webapp/master/data-role/tambah.php";
+            break;
+        case 'edit-role':
+            include "webapp/master/data-role/edit.php";
+            break;
         default:
             include "webapp/dashboard/dashboard.php";
             break;

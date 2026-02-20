@@ -54,13 +54,15 @@ $row = mysqli_fetch_assoc($res);
                     </div>
                     <div class="mb-3 row">
                         <label for="" class="col-sm-2 col-form-label">Keterangan</label>
-                        <select class="form-select select2-example" name="keterangan" required>
-                            <option selected disabled>Pilih Keterangan</option>
-                            <option value="Standar Pendidikan" <?= $row['keterangan'] == 'Standar Pendidikan' ? 'selected' : '' ?>>Standar Pendidikan</option>
-                            <option value="Standar Penelitian" <?= $row['keterangan'] == 'Standar Penelitian' ? 'selected' : '' ?>>Standar Penelitian</option>
-                            <option value="Standar Pengabdian" <?= $row['keterangan'] == 'Standar Pengabdian' ? 'selected' : '' ?>>Standar Pengabdian</option>
-                            <option value="Standar Tambahan" <?= $row['keterangan'] == 'Standar Tambahan' ? 'selected' : '' ?>>Standar Tambahan</option>
-                        </select>
+                        <div class="col-sm-10">
+                            <select class="form-select select2-example" name="keterangan" required>
+                                <option selected disabled>Pilih Keterangan</option>
+                                <option value="Standar Pendidikan" <?= $row['keterangan'] == 'Standar Pendidikan' ? 'selected' : '' ?>>Standar Pendidikan</option>
+                                <option value="Standar Penelitian" <?= $row['keterangan'] == 'Standar Penelitian' ? 'selected' : '' ?>>Standar Penelitian</option>
+                                <option value="Standar Pengabdian" <?= $row['keterangan'] == 'Standar Pengabdian' ? 'selected' : '' ?>>Standar Pengabdian</option>
+                                <option value="Standar Tambahan" <?= $row['keterangan'] == 'Standar Tambahan' ? 'selected' : '' ?>>Standar Tambahan</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="mb-3 row">
                         <label for="" class="col-sm-2 col-form-label">Link Dokumen</label>
