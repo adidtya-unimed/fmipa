@@ -26,4 +26,9 @@ $menus = [
             ["nama" => "Data Role", "href" => getRoute('main') . "?p=tampil-role"],
         ]],
     ],
+
+    "gpm" => [
+        ["nama" => "Dashboard", "icon" => "bi bi-bar-chart", "href" => getRoute('/main') . "?p=dashboard", "aktif" => "active", "sub" => null],
+        ["nama" => "Mutu Internal", "icon" => "bi bi-clipboard-check", "href" => getRoute('/main') . "?p=tampil-mutu-internal", "aktif" => null, "sub" => null],
+    ],
 ];
