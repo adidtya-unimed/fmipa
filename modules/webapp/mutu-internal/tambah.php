@@ -33,6 +33,8 @@
                                 <option selected disabled>Pilih Kategori</option>
                                 <option value="Standar SPMI">Standar SPMI</option>
                                 <option value="Manual SPMI">Manual SPMI</option>
+                                <option value="Laporan Monev">Laporan Monev</option>
+                                <option value="Lain-lain">Lain-lain</option>
                             </select>
                         </div>
                     </div>
