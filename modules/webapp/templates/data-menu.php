@@ -21,6 +21,7 @@ $menus = [
             ["nama" => "Dokumen Akademik", "href" => getRoute('main') . "?p=tampil-dokumen-akademik"],
         ]],
         ["nama" => "Mutu Internal", "icon" => "bi bi-clipboard-check", "href" => getRoute('/main') . "?p=tampil-mutu-internal", "aktif" => null, "sub" => null],
+        ["nama" => "Kerjasama", "icon" => "bi bi-share-fill", "href" => getRoute('/main') . "?p=tampil-kerjasama", "aktif" => null, "sub" => null],
         ["nama" => "Master", "icon" => "bi bi-database", "href" => "#", "aktif" => null, "sub" => [
             ["nama" => "Data User", "href" => getRoute('main') . "?p=tampil-user"],
             ["nama" => "Data Role", "href" => getRoute('main') . "?p=tampil-role"],

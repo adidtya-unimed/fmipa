@@ -84,6 +84,15 @@ if (isset($_GET['p'])) {
         case 'edit-role':
             include "webapp/master/data-role/edit.php";
             break;
+        case 'tampil-kerjasama':
+            include "webapp/kerjasama/view.php";
+            break;
+        case 'tambah-kerjasama':
+            include "webapp/kerjasama/tambah.php";
+            break;
+        case 'edit-kerjasama':
+            include "webapp/kerjasama/edit.php";
+            break;
         default:
             include "webapp/dashboard/dashboard.php";
             break;

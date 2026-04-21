@@ -49,3 +49,7 @@ addRoute('/master/user/delete', '/webapp/master/data-user/delete.php', true);
 addRoute('/master/role/create', '/webapp/master/data-role/add.php', true);
 addRoute('/master/role/update', '/webapp/master/data-role/update.php', true);
 addRoute('/master/role/delete', '/webapp/master/data-role/delete.php', true);
+
+addRoute('/kerjasama/create', '/webapp/kerjasama/add.php', true);
+addRoute('/kerjasama/update', '/webapp/kerjasama/update.php', true);
+addRoute('/kerjasama/delete', '/webapp/kerjasama/delete.php', true);
