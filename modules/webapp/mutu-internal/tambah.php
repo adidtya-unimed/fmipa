@@ -33,6 +33,7 @@
                                 <option selected disabled>Pilih Kategori</option>
                                 <option value="Standar SPMI">Standar SPMI</option>
                                 <option value="Manual SPMI">Manual SPMI</option>
+                                <option value="Instrumen Monev">Instrumen Monev</option>
                                 <option value="Laporan Monev">Laporan Monev</option>
                                 <option value="Lain-lain">Lain-lain</option>
                             </select>
@@ -48,6 +49,7 @@
                                 <option value="Standar Penelitian">Standar Penelitian</option>
                                 <option value="Standar Pengabdian">Standar Pengabdian</option>
                                 <option value="Standar Tambahan">Standar Tambahan</option>
+                                <option value="Hasil Monev">Hasil Monev</option>
                             </select>
                         </div>
                     </div>

@@ -65,6 +65,7 @@
                         <li><a href="<?= getRoute('/') ?>?p=kebijakan-mutu">Kebijakan Mutu</a></li>
                         <li><a href="<?= getRoute('/') ?>?p=standar-mutu">Standard Mutu</a></li>
                         <li><a href="<?= getRoute('/') ?>?p=manual-mutu">Manual Mutu</a></li>
+                        <li><a href="<?= getRoute('/') ?>?p=monev">Instrumen & Hasil Monev</a></li>
                     </ul>
                 </li>
                 <li class="dropdown"><a href="#"><span>Zona Integritas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>

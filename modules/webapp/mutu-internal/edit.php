@@ -49,6 +49,9 @@ $row = mysqli_fetch_assoc($res);
                                 <option selected disabled>Pilih Status</option>
                                 <option value="Standar SPMI" <?= $row['kategori'] == 'Standar SPMI' ? 'selected' : '' ?>>Standar SPMI</option>
                                 <option value="Manual SPMI" <?= $row['kategori'] == 'Manual SPMI' ? 'selected' : '' ?>>Manual SPMI</option>
+                                <option value="Instrumen Monev" <?= $row['kategori'] == 'Instrumen Monev' ? 'selected' : '' ?>>Instrumen Monev</option>
+                                <option value="Laporan Monev" <?= $row['kategori'] == 'Laporan Monev' ? 'selected' : '' ?>>Laporan Monev</option>
+                                <option value="Lain-lain" <?= $row['kategori'] == 'Lain-lain' ? 'selected' : '' ?>>Lain-lain</option>
                             </select>
                         </div>
                     </div>
@@ -61,6 +64,7 @@ $row = mysqli_fetch_assoc($res);
                                 <option value="Standar Penelitian" <?= $row['keterangan'] == 'Standar Penelitian' ? 'selected' : '' ?>>Standar Penelitian</option>
                                 <option value="Standar Pengabdian" <?= $row['keterangan'] == 'Standar Pengabdian' ? 'selected' : '' ?>>Standar Pengabdian</option>
                                 <option value="Standar Tambahan" <?= $row['keterangan'] == 'Standar Tambahan' ? 'selected' : '' ?>>Standar Tambahan</option>
+                                <option value="Hasil Monev" <?= $row['keterangan'] == 'Hasil Monev' ? 'selected' : '' ?>>Hasil Monev</option>
                             </select>
                         </div>
                     </div>
