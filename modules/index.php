@@ -48,6 +48,9 @@ if (isset($_GET['p'])) {
         case 'monev':
             include "website/monev/monev.php";
             break;
+        case 'beasiswa':
+            include "website/beasiswa/beasiswa.php";
+            break;
         case 'kemahasiswaan-fakultas':
             include "website/kemahasiswaan-fakultas/kemahasiswaan-fakultas.php";
             break;

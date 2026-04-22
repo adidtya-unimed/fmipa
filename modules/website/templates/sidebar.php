@@ -98,7 +98,7 @@
                         </li>
                         <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                             <ul>
-                                <li><a href="#">Beasiswa</a></li>
+                                <li><a href="<?= getRoute('/') ?>?p=beasiswa">Beasiswa</a></li>
                                 <li class="dropdown"><a href="#"><span>Fasilitas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                                     <ul>
                                         <li><a href="#">Aula FMIPA</a></li>
